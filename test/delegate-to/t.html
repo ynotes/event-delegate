@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+</head>
+<body>
+
+<script src="../node_modules/delegate-to/dist/delegate-to.js"></script>
+<script src="../script.js"></script>
+<script>
+$('l1').addEventListener('click', DelegateTo('a', onClick))
+$('a2').addEventListener('click', DelegateTo('b', onClick))
+$('a3').addEventListener('click', DelegateTo('a', onClick))
+$('b4').addEventListener('click', DelegateTo('a', onClick))
+
+function $(id) {
+  return document.getElementById(id)
+}
+
+// li > a > b
+
+</script>
+
+</body>
+</html>

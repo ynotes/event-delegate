@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+</head>
+<body>
+
+<script src="../node_modules/delegate/dist/delegate.js"></script>
+<script src="script.js"></script>
+<script>
+delegate($('l1'), 'a', 'click', onClick)
+delegate($('a2'), 'b', 'click', onClick)
+delegate($('a3'), 'a', 'click', onClick)
+delegate($('b4'), 'a', 'click', onClick)
+
+function $(id) {
+  return document.getElementById(id)
+}
+</script>
+
+</body>
+</html>

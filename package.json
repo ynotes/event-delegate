@@ -1,0 +1,15 @@
+{
+  "name": "dom-event-delegation",
+  "version": "1.0.0",
+  "description": "dom event delegation",
+  "author": "Ivan Yan",
+  "license": "MIT",
+  "private": true,
+  "repository": "ynotes/dom-event-delegation",
+  "dependencies": {
+    "delegate": "^3.1.3",
+    "delegate-to": "^0.1.4",
+    "delegated-events": "^1.0.1",
+    "jquery": "^3.1.1"
+  }
+}
